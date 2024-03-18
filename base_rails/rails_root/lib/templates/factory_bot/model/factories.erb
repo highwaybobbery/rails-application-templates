@@ -1,0 +1,21 @@
+FactoryBot.define do
+  factory :<%= "#{class_name.gsub("::", "").underscore}#{explicit_class_option}" %> do
+  <% attributes.each do |attribute| -%>
+    <%=
+      factory = case attribute.name
+      when 'name', 'full_name'
+        'Faker::Name.name'
+      when 'first_name'
+        'Faker::Name.first_name'
+      when 'last_name'
+        'Faker::Name.last_name'
+      when 'email', 'email_address'
+        'Faker::Name.last_name'
+      else
+        attribute.default.inspect
+      end
+      "#{attribute.name} { #{factory }"
+    %>
+  <% end -%>
+  end
+end

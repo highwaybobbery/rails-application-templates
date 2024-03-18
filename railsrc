@@ -1,0 +1,8 @@
+# Copy or symlink this file to ~/.railsrc to use these options on all rails projects
+--database postgresql
+--skip-action-mailer
+--skip-action-mailbox
+--skip-test
+--skip-system-test
+--skip-jbuilder
+--css tailwind

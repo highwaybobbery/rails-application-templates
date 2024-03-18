@@ -1,0 +1,5 @@
+<div 
+  data-behavior="react" 
+  data-component="<%= asset_path("components/#{local_assigns[:name]}.js") %>"
+  data-props="<%= (local_assigns[:props] || {}).to_json %>"
+/></div>
