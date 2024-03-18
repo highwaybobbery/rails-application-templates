@@ -1,21 +1,21 @@
 # Welcome!
 This project is a collection of rails application templates.
 
-[base_rails/](Base Rails)
+[Base Rails](base_rails/)
 Use this rails application generator to get a sparkly new rails app with:
 - Factory Bot
 - Fakr
 - Rspec
 - Rubocop
 
-[add-react-typescript](Add React/Typescript)
+[Add React/Typescript](add-react-typescript)
 Apply this template from an existing project to set up react with typescript with:
 ```
 bin/rails app:template LOCATION=../rails-application-templates/add-react-typescript/template.rb`
 ```
 (This assumes this repo and the target rails app are in the same parent directory)
 
-[add-graphql](Add GraphQL)
+[Add GraphQL](add-graphql)
 Apply this template from an existing project to set up GraphQL:
 ```
 bin/rails app:template LOCATION=../rails-application-templates/add-graphql/template.rb`
